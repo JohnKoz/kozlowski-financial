@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kozlowski Financial | Financial Coaching for Working Professionals</title>
+  <meta name="description" content="Personal financial coaching for working professionals. Eliminate waste, set achievable goals, and build lasting financial confidence." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C5A572',
+            'gold-soft': 'rgba(197, 165, 114, 0.1)',
+            navy: '#0A2540',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, sans-serif; color: #0A0A0A; }
+    .hero-bg { background: linear-gradient(135deg, #0A2540 0%, #143a5e 100%); }
+  </style>
+</head>
+<body class="bg-white">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">KF</span>
+      <span class="font-semibold text-navy text-lg">Kozlowski Financial</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-navy">Home</a>
+      <a href="services.html" class="hover:text-navy">Services</a>
+      <a href="book.html" class="hover:text-navy">Book Consultation</a>
+    </nav>
+    <a href="book.html" class="bg-gold hover:bg-gold/90 text-white text-sm font-medium px-4 py-2 rounded-md">Get Started</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-bg text-white">
+  <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm text-gold mb-6">
+        💼 For Working Professionals
+      </span>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Fine-Tune Your Finances,<br />
+        <span class="text-gold">Build Real Wealth</span>
+      </h1>
+      <p class="text-gray-200 text-lg mb-8 leading-relaxed">
+        You work hard for your money—now make it work harder for you. I help working professionals eliminate waste, set achievable goals, and build lasting financial confidence.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="book.html" class="bg-gold hover:bg-gold/90 text-white font-medium px-6 py-3 rounded-md inline-flex items-center gap-2">
+          Get Your Financial Tune-Up →
+        </a>
+        <a href="#how-it-works" class="bg-white text-navy font-medium px-6 py-3 rounded-md">How It Works</a>
+      </div>
+      <div class="grid grid-cols-3 gap-6 mt-12">
+        <div>
+          <div class="text-3xl font-bold text-gold">$2,800</div>
+          <div class="text-sm text-gray-300">Avg. Annual Savings</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-gold">6 mo</div>
+          <div class="text-sm text-gray-300">To First Major Goal</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-gold">94%</div>
+          <div class="text-sm text-gray-300">Feel More Confident</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Financial Journey Card -->
+    <div class="bg-white text-navy rounded-2xl p-8 shadow-2xl">
+      <div class="text-center mb-6">
+        <h3 class="text-xl font-bold">Your Financial Journey</h3>
+        <p class="text-sm text-gray-600">From stressed to stable to thriving</p>
+      </div>
+      <div class="space-y-4">
+        <div class="p-4 bg-green-50 border border-green-200 rounded-lg">
+          <div class="flex justify-between text-sm font-medium mb-2">
+            <span>Emergency Fund (3 months)</span>
+            <span class="text-green-700">✓ Complete</span>
+          </div>
+          <div class="h-2 bg-green-200 rounded-full"><div class="h-full bg-green-500 rounded-full" style="width:100%"></div></div>
+        </div>
+        <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+          <div class="flex justify-between text-sm font-medium mb-1">
+            <span>Eliminate High-Interest Debt</span>
+            <span>73%</span>
+          </div>
+          <div class="h-2 bg-blue-200 rounded-full mb-2"><div class="h-full bg-blue-500 rounded-full" style="width:73%"></div></div>
+          <div class="text-xs text-gray-600">$5,475 of $7,500 paid off</div>
+        </div>
+        <div class="p-4 bg-purple-50 border border-purple-200 rounded-lg">
+          <div class="flex justify-between text-sm font-medium mb-1">
+            <span>Max Out 401(k) Match</span>
+            <span class="text-purple-700">In Progress</span>
+          </div>
+          <div class="h-2 bg-purple-200 rounded-full mb-2"><div class="h-full bg-purple-500 rounded-full" style="width:60%"></div></div>
+          <div class="text-xs text-gray-600">Increased from 3% to 5%</div>
+        </div>
+        <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+          <div class="flex justify-between text-sm font-medium">
+            <span>House Down Payment</span>
+            <span class="text-gray-500">Next</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+          <span class="text-sm text-gray-700">Overall Financial Health</span>
+          <div class="flex items-center gap-3">
+            <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-full rounded-full" style="width:78%; background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);"></div>
+            </div>
+            <span class="font-bold">78%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="text-gold text-sm font-semibold uppercase tracking-wide">How I Help Professionals</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2">Financial Stability for Working Professionals</h2>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Whether you need personal guidance or are looking to bring financial wellness to your workplace—I help professionals achieve financial confidence.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-7 shadow-sm border border-gray-100">
+        <div class="w-12 h-12 bg-gold-soft rounded-lg flex items-center justify-center text-gold text-2xl mb-4">📊</div>
+        <h3 class="text-xl font-bold text-navy mb-2">1-on-1 Financial Tune-Up</h3>
+        <p class="text-gray-600 text-sm mb-4">Personalized sessions designed for busy professionals. Set clear goals, optimize your paycheck, and build a sustainable financial plan.</p>
+        <ul class="text-sm text-gray-700 space-y-1.5 mb-5">
+          <li>✓ Identify and eliminate hidden money drains</li>
+          <li>✓ Set achievable short & long-term goals</li>
+          <li>✓ Optimize your benefits and tax withholdings</li>
+          <li>✓ Build an emergency fund that fits your life</li>
+          <li>✓ Create a simple, maintainable budget</li>
+        </ul>
+        <a href="services.html" class="text-gold font-medium text-sm hover:underline">Learn More →</a>
+      </div>
+
+      <div class="bg-white rounded-xl p-7 shadow-sm border border-gray-100">
+        <div class="w-12 h-12 bg-gold-soft rounded-lg flex items-center justify-center text-gold text-2xl mb-4">🔍</div>
+        <h3 class="text-xl font-bold text-navy mb-2">401k Fee Analysis & Optimization</h3>
+        <p class="text-gray-600 text-sm mb-4">Uncover hidden fees in your retirement accounts. Many professionals pay 1% or more in fees without realizing it—I'll show you exactly what you're paying.</p>
+        <ul class="text-sm text-gray-700 space-y-1.5 mb-5">
+          <li>✓ Complete 401k fee breakdown and analysis</li>
+          <li>✓ Identify high-cost funds costing you thousands</li>
+          <li>✓ Understand what your money is invested in</li>
+          <li>✓ Optimize fund selection for lower fees</li>
+          <li>✓ Maximize employer match strategies</li>
+        </ul>
+        <a href="services.html" class="text-gold font-medium text-sm hover:underline">Learn More →</a>
+      </div>
+
+      <div class="bg-white rounded-xl p-7 shadow-sm border border-gray-100">
+        <div class="w-12 h-12 bg-gold-soft rounded-lg flex items-center justify-center text-gold text-2xl mb-4">🏢</div>
+        <h3 class="text-xl font-bold text-navy mb-2">Corporate Financial Wellness Programs</h3>
+        <p class="text-gray-600 text-sm mb-4">Comprehensive financial education programs for companies, HR departments, and professional organizations.</p>
+        <ul class="text-sm text-gray-700 space-y-1.5 mb-5">
+          <li>✓ Employee financial wellness initiatives</li>
+          <li>✓ Lunch-and-learn workshop series</li>
+          <li>✓ One-on-one consultation programs</li>
+          <li>✓ Financial stress reduction training</li>
+          <li>✓ Customizable curriculum for your team</li>
+        </ul>
+        <a href="services.html" class="text-gold font-medium text-sm hover:underline">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="services.html" class="inline-block bg-navy hover:bg-navy/90 text-white font-medium px-6 py-3 rounded-md">View All Services & Pricing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="text-gold text-sm font-semibold uppercase tracking-wide">Simple Process</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2">What to Expect</h2>
+      <p class="text-gray-600 mt-4">A clear, straightforward process to take control of your finances</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full bg-gold text-white flex items-center justify-center text-xl font-bold mb-4">1</div>
+        <h3 class="font-bold text-navy mb-2">30-Minute Discovery Call</h3>
+        <p class="text-gray-600 text-sm">We'll discuss your goals, challenges, and current financial situation.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full bg-gold text-white flex items-center justify-center text-xl font-bold mb-4">2</div>
+        <h3 class="font-bold text-navy mb-2">Financial Tune-Up Session</h3>
+        <p class="text-gray-600 text-sm">Deep dive into your finances, set clear goals, and find hidden money.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full bg-gold text-white flex items-center justify-center text-xl font-bold mb-4">3</div>
+        <h3 class="font-bold text-navy mb-2">Build Your Action Plan</h3>
+        <p class="text-gray-600 text-sm">Get a personalized roadmap with clear steps and ongoing support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Approach -->
+<section class="py-20 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="text-gold text-sm font-semibold uppercase tracking-wide">My Approach</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-6">Built for Busy Professionals</h2>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        You don't need complex strategies or hours of spreadsheet work. You need clarity, actionable steps, and systems that fit your life. I cut through the noise and help you build real financial stability—without sacrificing your lifestyle or sanity.
+      </p>
+      <ul class="space-y-2.5 text-gray-700 mb-8">
+        <li class="flex gap-2"><span class="text-gold">✓</span> Clear, achievable goals tailored to your income</li>
+        <li class="flex gap-2"><span class="text-gold">✓</span> Find money you're already earning but wasting</li>
+        <li class="flex gap-2"><span class="text-gold">✓</span> Simple systems that work with your busy schedule</li>
+        <li class="flex gap-2"><span class="text-gold">✓</span> Build confidence in your financial decisions</li>
+        <li class="flex gap-2"><span class="text-gold">✓</span> Create stability and grow wealth simultaneously</li>
+      </ul>
+      <a href="book.html" class="inline-block bg-gold hover:bg-gold/90 text-white font-medium px-6 py-3 rounded-md">Schedule Your Tune-Up →</a>
+    </div>
+    <div class="bg-white rounded-xl p-7 shadow-sm border border-gray-100">
+      <h3 class="text-xl font-bold text-navy mb-5">Common Challenges I Solve</h3>
+      <p class="text-sm text-gray-600 mb-5">Real issues working professionals face</p>
+      <div class="space-y-4">
+        <div class="border-l-4 border-gold pl-4">
+          <div class="font-medium text-navy">"I don't understand my 401k"</div>
+          <div class="text-sm text-gray-600">→ Optimize what you already have</div>
+        </div>
+        <div class="border-l-4 border-gold pl-4">
+          <div class="font-medium text-navy">"Too busy to manage my finances"</div>
+          <div class="text-sm text-gray-600">→ Simple systems that run themselves</div>
+        </div>
+        <div class="border-l-4 border-gold pl-4">
+          <div class="font-medium text-navy">"I make decent money but have nothing saved"</div>
+          <div class="text-sm text-gray-600">→ Build emergency fund in 6-12 months</div>
+        </div>
+        <div class="border-l-4 border-gold pl-4">
+          <div class="font-medium text-navy">"My debt keeps growing despite payments"</div>
+          <div class="text-sm text-gray-600">→ Strategic payoff plan that works</div>
+        </div>
+      </div>
+      <p class="text-sm text-gray-600 mt-5">Sound familiar? Most professionals face these exact challenges. The good news? They're all solvable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="text-gold text-sm font-semibold uppercase tracking-wide">Success Stories</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2">Professionals Just Like You</h2>
+      <p class="text-gray-600 mt-4">See how working professionals transformed their financial situations with clear guidance and achievable goals.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-slate-50 rounded-xl p-6 border border-gray-100">
+        <p class="text-gray-700 italic mb-5">"Before working together, I was contributing to my 401k but had no idea what I was invested in or why. Now I understand my portfolio, optimized my allocations, and I'm saving over $1,200 annually in fees alone."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-bold">D</div>
+          <div>
+            <div class="font-medium text-navy">Derek R.</div>
+            <div class="text-xs text-gray-500">DPT - Doctor of Physical Therapy</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 rounded-xl p-6 border border-gray-100">
+        <p class="text-gray-700 italic mb-5">"My company's 401k had 47 investment options and I was paralyzed. The fee analysis showed me I was losing thousands. Now I have a simple, low-cost strategy and I'm maxing my match."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-bold">J</div>
+          <div>
+            <div class="font-medium text-navy">James Rodriguez</div>
+            <div class="text-xs text-gray-500">Software Engineer</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 rounded-xl p-6 border border-gray-100">
+        <p class="text-gray-700 italic mb-5">"I thought my 401k was 'set and forget.' Turns out I was paying 0.9% in fees and invested way too conservatively. After optimizing, I'm on track to retire 5 years earlier."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-bold">E</div>
+          <div>
+            <div class="font-medium text-navy">Emily Chen</div>
+            <div class="text-xs text-gray-500">Nurse Practitioner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero-bg text-white py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Take Control of Your Finances?</h2>
+    <p class="text-gray-200 mb-8">Join hundreds of working professionals who've achieved financial stability and confidence. Schedule your free consultation today.</p>
+    <a href="book.html" class="inline-block bg-gold hover:bg-gold/90 text-white font-semibold px-8 py-4 rounded-md text-lg">Book Your Free Consultation →</a>
+    <p class="text-xs text-gray-400 mt-4">Free 30-minute consultation • No obligations • Results-focused approach</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-gray-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <div class="flex items-center gap-3">
+      <span class="w-8 h-8 rounded bg-white/10 text-gold flex items-center justify-center font-bold">KF</span>
+      <span>© <span id="year"></span> Kozlowski Financial</span>
+    </div>
+    <div class="flex gap-6">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="services.html" class="hover:text-gold">Services</a>
+      <a href="book.html" class="hover:text-gold">Book Consultation</a>
+    </div>
+    <a href="mailto:KozlowskiFinancial@gmail.com" class="hover:text-gold">KozlowskiFinancial@gmail.com</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

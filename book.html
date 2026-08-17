@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Free Consultation | Kozlowski Financial</title>
+  <meta name="description" content="Book a free 30-minute financial consultation. Fill out the form and I'll reach out within 48 hours." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { gold: '#C5A572', 'gold-soft': 'rgba(197,165,114,0.1)', navy: '#0A2540' } } } }
+  </script>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, sans-serif; color: #0A0A0A; }
+    .hero-bg { background: linear-gradient(135deg, #0A2540 0%, #143a5e 100%); }
+    input:focus, textarea:focus, select:focus { outline: 2px solid #C5A572; outline-offset: 1px; }
+  </style>
+</head>
+<body class="bg-white">
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">KF</span>
+      <span class="font-semibold text-navy text-lg">Kozlowski Financial</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-navy">Home</a>
+      <a href="services.html" class="hover:text-navy">Services</a>
+      <a href="book.html" class="text-navy font-medium">Book Consultation</a>
+    </nav>
+    <a href="book.html" class="bg-gold hover:bg-gold/90 text-white text-sm font-medium px-4 py-2 rounded-md">Get Started</a>
+  </div>
+</header>
+
+<!-- Page hero -->
+<section class="hero-bg text-white py-16 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <span class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm text-gold mb-4">Start Your Journey</span>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Let's Build Your Financial Confidence</h1>
+    <p class="text-gray-200 text-lg">Fill out the form below and I'll reach out within 48 hours for a free 30-minute consultation. Together we'll create a clear path to financial stability and growth.</p>
+  </div>
+</section>
+
+<!-- Form + sidebar -->
+<section class="py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-3 gap-8">
+
+    <!-- Form -->
+    <div class="lg:col-span-2 bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+      <h2 class="text-2xl font-bold text-navy mb-6">Book Your Free Consultation</h2>
+
+      <form name="booking" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5">
+        <input type="hidden" name="form-name" value="booking" />
+        <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1.5">👤 Full Name <span class="text-red-500">*</span></label>
+            <input type="text" name="full_name" required placeholder="John Doe" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1.5">✉ Email <span class="text-red-500">*</span></label>
+            <input type="email" name="email" required placeholder="john@example.com" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1.5">📞 Phone Number</label>
+            <input type="tel" name="phone" placeholder="(555) 123-4567" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1.5">📅 Preferred Date</label>
+            <input type="date" name="preferred_date" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">What Are You Looking For? <span class="text-red-500">*</span></label>
+          <select name="service_type" required class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm bg-white">
+            <option value="">Select a service</option>
+            <option value="individual_consulting">Personal Financial Tune-Up (1-on-1)</option>
+            <option value="group_workshop">Workplace Financial Workshop</option>
+            <option value="institutional_program">Corporate Wellness Program</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">Organization (if applicable)</label>
+          <input type="text" name="organization" placeholder="Your organization name" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">Tell Me About Your Situation <span class="text-red-500">*</span></label>
+          <textarea name="message" required rows="5" placeholder="What financial challenges are you facing? What goals do you want to achieve? (e.g., build savings, pay off debt, understand benefits, etc.)" class="w-full border border-gray-300 rounded-md px-3 py-2.5 text-sm"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-gold hover:bg-gold/90 text-white font-semibold py-3.5 rounded-md text-base">Request Free Consultation</button>
+      </form>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="space-y-6">
+      <div class="bg-navy text-white rounded-xl p-6">
+        <h3 class="font-bold mb-5 flex items-center gap-2">🕐 What to Expect</h3>
+        <div class="space-y-4">
+          <div class="flex gap-3">
+            <div class="w-7 h-7 rounded-full bg-gold text-white flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
+            <div>
+              <div class="font-semibold text-sm">30-Minute Consultation Call</div>
+              <div class="text-xs text-gray-300 mt-1">We'll discuss your goals, challenges, and current financial situation.</div>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-7 h-7 rounded-full bg-gold text-white flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
+            <div>
+              <div class="font-semibold text-sm">Financial Tune-Up Session</div>
+              <div class="text-xs text-gray-300 mt-1">Deep dive into your finances, set clear goals, and find hidden money.</div>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-7 h-7 rounded-full bg-gold text-white flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
+            <div>
+              <div class="font-semibold text-sm">Build Your Action Plan</div>
+              <div class="text-xs text-gray-300 mt-1">Get a personalized roadmap with clear steps and ongoing support.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-gray-100">
+        <h3 class="font-bold text-navy mb-4">Contact Information</h3>
+        <div class="text-sm space-y-3">
+          <a href="mailto:KozlowskiFinancial@gmail.com" class="flex items-center gap-2 text-gray-700 hover:text-gold">
+            ✉ KozlowskiFinancial@gmail.com
+          </a>
+          <div class="flex items-center gap-2 text-gray-700">
+            🕐 Mon-Fri: 9AM - 6PM CST
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-navy text-gray-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <div class="flex items-center gap-3">
+      <span class="w-8 h-8 rounded bg-white/10 text-gold flex items-center justify-center font-bold">KF</span>
+      <span>© <span id="year"></span> Kozlowski Financial</span>
+    </div>
+    <div class="flex gap-6">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="services.html" class="hover:text-gold">Services</a>
+      <a href="book.html" class="hover:text-gold">Book Consultation</a>
+    </div>
+    <a href="mailto:KozlowskiFinancial@gmail.com" class="hover:text-gold">KozlowskiFinancial@gmail.com</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
