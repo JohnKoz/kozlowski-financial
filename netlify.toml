@@ -1,0 +1,21 @@
+# Force-redirect all secondary/www domains to the canonical primary.
+# Primary: https://kozlowskifinancial.com
+# force = true means these fire even when a real file exists at the path.
+
+[[redirects]]
+  from = "https://kozfinancial.com/*"
+  to = "https://kozlowskifinancial.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.kozfinancial.com/*"
+  to = "https://kozlowskifinancial.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.kozlowskifinancial.com/*"
+  to = "https://kozlowskifinancial.com/:splat"
+  status = 301
+  force = true
