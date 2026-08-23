@@ -6,12 +6,12 @@ Marketing site for Kozlowski Financial. Static HTML + Tailwind (CDN), deployed o
 
 - `index.html` — home
 - `services.html` — services & pricing
-- `book.html` — consultation form
+- `contact.html` — consultation form
 - `thanks.html` — post-submission page
 
 ## Form
 
-The consultation form on `book.html` uses [Netlify Forms](https://docs.netlify.com/forms/setup/). Submissions are captured automatically once deployed to Netlify — no third-party service. View them in the Netlify dashboard under **Forms → booking**.
+The consultation form on `contact.html` uses [Netlify Forms](https://docs.netlify.com/forms/setup/). Submissions are captured automatically once deployed to Netlify — no third-party service. View them in the Netlify dashboard under **Forms → booking**.
 
 Email notifications: Netlify site settings → **Forms → Form notifications → Add notification**.
 
