@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Kozlowski Financial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { gold: '#C5A572', navy: '#0A2540' } } } }
+  </script>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, sans-serif; color: #0A0A0A; }
+    .hero-bg { background: linear-gradient(135deg, #0A2540 0%, #143a5e 100%); }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">KF</span>
+      <span class="font-semibold text-navy text-lg">Kozlowski Financial</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-navy">Home</a>
+      <a href="services.html" class="hover:text-navy">Services</a>
+      <a href="contact.html" class="hover:text-navy">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="flex-1 py-16">
+  <article class="max-w-3xl mx-auto px-6 text-gray-700 leading-relaxed space-y-6">
+    <h1 class="text-4xl font-bold text-navy">Privacy Policy</h1>
+    <p class="text-sm text-gray-500">Effective November 15, 2026</p>
+
+    <p>Kozlowski Financial Coaching LLC ("Kozlowski Financial", "I") runs this website. This page explains what information the site collects and what I do with it.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">What I collect</h2>
+    <p>When you request a consultation, the form collects your name, email, phone number (optional), preferred date, the service you're interested in, your organization (optional), and what you write about your situation.</p>
+    <p>Please don't include account numbers, Social Security numbers, passwords, or other sensitive identifiers in the form. We'll cover the details you're comfortable sharing during your call.</p>
+    <p>The site does not use analytics, advertising trackers, or cookies of its own.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">How it's used</h2>
+    <p>I use your information only to respond to your request, schedule a session, and provide coaching services you sign up for. I don't sell, rent, or share your information for marketing.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">Where it's stored</h2>
+    <p>The site is hosted by Netlify. Form submissions are processed and stored by Netlify and forwarded to my email, hosted by Google. Both services encrypt data in transit and at rest, and access to these accounts is protected with multi-factor authentication. Page styling is loaded from Tailwind's content delivery network, which receives standard request information such as your IP address.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">How long it's kept</h2>
+    <p>Form submissions are deleted from the website host once they've been moved into my client records. If you don't become a client, I delete your information on request, or after 12 months.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">Your choices</h2>
+    <p>You can ask to see, correct, or delete the information I have about you by emailing KozlowskiFinancial@gmail.com.</p>
+
+    <h2 class="text-2xl font-semibold text-navy pt-2">Changes</h2>
+    <p>If this policy changes, I'll update this page and the effective date above.</p>
+  </article>
+</main>
+
+<footer class="bg-navy text-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+    © <span id="year"></span> Kozlowski Financial · <a href="mailto:KozlowskiFinancial@gmail.com" class="hover:text-gold">KozlowskiFinancial@gmail.com</a> · <a href="privacy.html" class="hover:text-gold">Privacy</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
